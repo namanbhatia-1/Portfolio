@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../Assets/html1.png";
 
 const skills = [
   { name: "HTML", level: 70 },
@@ -14,9 +15,9 @@ const SkillBar = ({ name, level }) => (
       <span className="text-lg font-medium text-white">{name}</span>
       <span className="text-sm text-white">{level}%</span>
     </div>
-    <div className="w-full bg-gray-300 rounded-full h-2">
+    <div className="w-full bg-gray-700 rounded-full h-2">
       <div
-        className="bg-gradient-to-r from-blue-600 via-purple-700 to-pink-700 h-2 rounded-full"
+        className="bg-gradient-to-r from-lime-400 to-lime-600 h-2 rounded-full"
         style={{ width: `${level}%` }}
       ></div>
     </div>
@@ -26,10 +27,10 @@ const SkillBar = ({ name, level }) => (
 function Skills() {
   return (
     <>
-      <div className="min-h-screen bg-slate-900 font-Ubuntu w-full py-10">
+      <div className="min-h-screen bg-black font-Ubuntu w-full py-10">
         {/* Skills Title */}
-        <div className="flex justify-center items-center">
-          <p className="text-3xl font-medium text-white border-b-2 border-red-500">
+        <div className="flex justify-center items-center mt-9">
+          <p className="text-3xl font-medium text-white border-b-2 border-lime-400">
             SKILLS
           </p>
         </div>
@@ -38,7 +39,7 @@ function Skills() {
         <div className="flex flex-col lg:flex-row w-full mt-10 lg:space-x-16 px-4 lg:px-20">
           {/* Skill Bars */}
           <div className="flex justify-center w-full lg:w-1/2 mb-10 lg:mb-0">
-            <div className="max-w-md w-full mx-auto p-6 bg-slate-600/10 rounded-3xl shadow-md">
+            <div className="max-w-md w-full mx-auto p-6 bg-slate-600/10 rounded-3xl shadow-sm shadow-white">
               {skills.map((skill) => (
                 <SkillBar key={skill.name} name={skill.name} level={skill.level} />
               ))}
@@ -47,7 +48,7 @@ function Skills() {
 
           {/* Image Section */}
           <div className="flex justify-center w-full lg:w-1/2">
-            <img className="w-64 lg:w-96" src={"html1.png"} alt="logo" />
+            <img className="w-64 lg:w-96 border-2 rounded-full" src={logo} alt="logo" />
           </div>
         </div>
       </div>

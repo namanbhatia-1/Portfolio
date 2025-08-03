@@ -6,7 +6,12 @@ module.exports = {
       fontFamily: {
         sans: ['Alfa Slab One'],   
         Ubuntu: ['Ubuntu'],
+        sans: ['"Ubuntu"', 'sans-serif'],
     },
+    colors: {
+        neon: '#D5FF00',
+      },
+      
     screens: {
       'sm': '640px',
       'md': '768px',

@@ -1,11 +1,12 @@
 import React from "react";
+import naman from "../Assets/about1.png"
 
 function About() {
   return (
-    <div className="font-Ubuntu w-full bg-slate-900 min-h-screen flex flex-col justify-center items-center px-4">
+    <div className="font-Ubuntu w-full bg-black min-h-screen flex flex-col justify-center items-center px-4">
       {/* Section Title */}
       <div className="flex justify-center items-center mb-10">
-        <p className="text-3xl font-medium text-white border-b-2 border-red-500">INTRODUCTION</p>
+        <p className="text-3xl font-medium text-white border-b-2 border-lime-400">INTRODUCTION</p>
       </div>
 
       {/* Main Content */}
@@ -14,14 +15,14 @@ function About() {
         <div className="w-1/2 flex justify-center items-center mb-8 lg:mb-0">
           <img
             className="w-64 lg:w-80 rounded-b-full select-none hover:animate-pulse"
-            src={"about1.png"}
+            src={naman}
             alt="Profile"
           />
         </div>
 
         {/* Introduction Text */}
-        <div className="lg:w-1/2 flex justify-center items-center">
-          <p className="text-lg lg:text-2xl font-bold text-center lg:text-center leading-loose text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+        <div className="lg:w-1/2">
+          <p className="text-lg lg:text-2xl font-medium text-center lg:text-justify tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-lime-300 via-lime-400 to-lime-600">
             I'm a passionate front-end web developer with a knack for creating
             visually stunning and highly interactive user experiences. With a
             strong foundation in HTML, CSS, and JavaScript, I specialize in
