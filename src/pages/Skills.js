@@ -29,8 +29,8 @@ function Skills() {
     <>
       <div className="min-h-screen bg-black font-Ubuntu w-full py-10">
         {/* Skills Title */}
-        <div className="flex justify-center items-center mt-9">
-          <p className="text-3xl font-medium text-white border-b-2 border-lime-400">
+        <div className="flex justify-center items-center">
+          <p className="text-3xl font-medium text-white border-b-2 border-red-500">
             SKILLS
           </p>
         </div>
