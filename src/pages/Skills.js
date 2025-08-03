@@ -41,14 +41,22 @@ function Skills() {
           <div className="flex justify-center w-full lg:w-1/2 mb-10 lg:mb-0">
             <div className="max-w-md w-full mx-auto p-6 bg-slate-600/10 rounded-3xl shadow-sm shadow-white">
               {skills.map((skill) => (
-                <SkillBar key={skill.name} name={skill.name} level={skill.level} />
+                <SkillBar
+                  key={skill.name}
+                  name={skill.name}
+                  level={skill.level}
+                />
               ))}
             </div>
           </div>
 
           {/* Image Section */}
           <div className="flex justify-center w-full lg:w-1/2">
-            <img className="w-64 lg:w-96 border-2 rounded-full" src={logo} alt="logo" />
+            <img
+              className="w-64 lg:w-96 border-2 rounded-full"
+              src={logo}
+              alt="logo"
+            />
           </div>
         </div>
       </div>
